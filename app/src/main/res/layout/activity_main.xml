@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/datoUsuario"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/bienvenido_a_sefree"
         android:textSize="30sp"
@@ -63,18 +63,36 @@
             android:layout_width="match_parent"
             android:layout_height="8dp" />
 
-        <EditText
-            android:id="@+id/etClave1"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldTwo"
+            android:background="@null"
+            android:inputType = "textPassword"
+            android:textColorHint="#B29DDB"
+            app:startIconDrawable="@drawable/ic_baseline_password_24"
+            app:endIconMode="password_toggle"
+            app:startIconContentDescription="@string/content_description_end_icon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/clave"
-            android:inputType="textPassword"
-            android:textColorHint="#B29DDB" />
+            android:hint="@string/contraseña"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etClave1"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <!-- app:endIconMode="password_toggle"--> dentro de Text InputLayout
+            <!--android:inputType="textPassword"--> dentro de arriba para contrasena
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="8dp" />
+            android:layout_height="16dp" />
 
 
     </LinearLayout>
