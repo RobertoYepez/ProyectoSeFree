@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ProyectoSeFree</string>
+    <string name="bienvenido_a_sefree">BIENVENIDO A SEFREE</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="clave">Clave</string>
+
+
+
+
 </resources>
