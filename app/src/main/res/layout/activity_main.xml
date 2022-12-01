@@ -33,15 +33,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
-        <EditText
-            android:id="@+id/etCorreo"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#B29DDB"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            app:startIconContentDescription="@string/content_description_end_icon"
+            app:endIconMode="clear_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="@string/correo_electronico"
-            android:inputType="textEmailAddress"
-            android:textColorHint="#B29DDB" />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCorreo"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <!-- app:endIconMode="password_toggle"--> dentro de Text InputLayout
+            <!--android:inputType="textPassword"--> dentro de arriba para contrasena
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
 
         <Space
             android:layout_width="match_parent"
