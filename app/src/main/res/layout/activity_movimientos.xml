@@ -10,7 +10,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField"
         android:background="@null"
-        android:inputType="date"
+        android:inputType="datetime"
         android:textColorHint="#B29DDB"
         app:startIconDrawable="@drawable/ic_baseline_calendar_month_24"
         app:startIconContentDescription="@string/content_description_end_icon"
@@ -20,10 +20,17 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etCalendario"
-            android:inputType="date"
+            android:id="@+id/etdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:onClick="showCalendary" />
+
+        <DatePicker
+            android:id="@+id/dpFecha"
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:visibility="gone"
             />
 
 
