@@ -4,6 +4,7 @@
     <string name="correo_electronico">Correo electronico</string>
     <string name="contraseña">Contraseña</string>
     <string name="fecha">Fecha</string>
+    <string name="categoria">Categoria</string>
     <string name="content_description_end_icon">Ccontent description end icon</string>
     content_description_end_icon
 
